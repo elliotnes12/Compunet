@@ -1,0 +1,27 @@
+
+@mixin  background($b:#fff,$uri:'',$repeat:no-repeat,$size:cover) {
+    @if $uri != ""{
+      background: $b url($uri) $repeat;
+      background-size:$size;
+      background-position: center;
+    }
+    @else{
+        background:$b;
+    }
+}
+@mixin createBlock($display:block,$width:100%,$max-width:100%,$height:auto,$flex:"false",$ejeSecundario:flex-start,$ejePrincipal:flex-start,$position:relative){
+
+      display:$display;
+      width: $width;
+      max-width: $max-width;
+      height: $height;
+      position:$position;
+      margin:0px auto;      
+
+      @if $flex == "true"{
+           display: flex;
+           align-items: $ejeSecundario;
+           justify-content: $ejePrincipal;
+           flex-wrap: wrap;
+      }
+}

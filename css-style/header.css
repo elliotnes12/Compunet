@@ -1,0 +1,55 @@
+/*
+Cabecera
+*/
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 225px;
+  background: #ddd;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 50px; }
+  @media (min-width: 993px) {
+    .encabezado {
+      height: 320px; } }
+  .encabezado-index {
+    background: #ddd url("img/banner.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 200px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    padding: 50px; }
+    @media all and (min-width: 768px) {
+      .encabezado-index {
+        height: 450px; } }
+  .encabezado-title {
+    display: block; }
+    @media (max-width: 768px) {
+      .encabezado-title {
+        display: none; } }
+  .encabezado-buttons {
+    display: none; }
+    @media (min-width: 768px) {
+      .encabezado-buttons {
+        display: block; } }

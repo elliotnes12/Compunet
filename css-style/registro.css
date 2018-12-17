@@ -1,0 +1,47 @@
+.rs-registro {
+  width: 60px !important;
+  height: 60px !important;
+  color: #fff;
+  border: none;
+  margin: 5px;
+  font-size: 20px; }
+
+.a-registro {
+  text-decoration: none;
+  color: #a0a0a0; }
+  .a-registro:hover {
+    color: #3a84e3;
+    text-decoration: underline; }
+
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap; }
+  .strike > span {
+    color: #999999;
+    display: inline-block;
+    font-weight: 600;
+    margin: 20px 0;
+    position: relative; }
+
+.strike > span:before,
+.strike > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: #e0e0e0; }
+
+.strike > span:before {
+  right: 100%;
+  margin-right: 15px; }
+
+.strike > span:after {
+  left: 100%;
+  margin-left: 15px; }
+
+@media all and (max-width: 993px) {
+  .info-logo {
+    display: none !important; } }

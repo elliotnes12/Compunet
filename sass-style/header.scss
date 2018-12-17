@@ -1,0 +1,62 @@
+@import './functions.scss';
+/*
+Cabecera
+*/
+
+.header-background
+{
+    background: rgba(36, 49, 65, 0.5);
+    box-sizing: border-box;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    padding-top: 50px;
+    top:0px;
+    left:0px;
+}
+
+.encabezado
+{
+    display: flex;
+    height: 225px;
+    background: #ddd;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 50px;
+
+    @media (min-width: 993px){
+      height:320px;
+    }
+    
+    &-index
+    {
+      @include background(#ddd,'img/banner.jpeg');
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      @media all and(min-width:768px){
+          height:450px;
+      }
+      justify-content: center;
+      text-align: left;
+      padding: 50px;
+    }
+    &-title
+    {
+        display: block;
+        @media (max-width: 768px){
+             display: none;
+        }
+    }
+    &-buttons{
+        display:none;
+        @media (min-width:768px){
+            display: block;
+        }
+    }
+}

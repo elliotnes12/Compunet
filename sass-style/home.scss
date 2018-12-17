@@ -1,0 +1,149 @@
+@import './generic-styles.scss';
+@import './functions.scss';
+
+
+#seccion{
+    &-one{
+        @include createBlock(block,100%,$max-width,auto);
+        
+        @media all and(min-width:769px){
+             width:80%;
+        }
+    }
+    &-two
+   {
+       @include createBlock(none,100%,$max-width,auto);
+      
+       @media all and(min-width:769px){
+         display:block;
+         padding-top: 55px;
+       }
+   }
+   &-three{
+
+    text-align: center; 
+    background: #f3f7fa; 
+    padding: 40px 0px;
+
+    .seccion-three-article
+    {
+        @include createBlock(block,80%,$max-width,auto,"true",flex-start,space-between);
+         
+
+        @media all and (min-width: 768px) and (max-width:992px)
+        {
+            clear: both;
+            display:block;
+            overflow: hidden;
+            
+            >*{
+                float:left;
+                margin-left: 10%;
+                margin-bottom: 2%;
+            }
+        }
+
+        .view-caja
+        {
+            width: 80%;
+
+            @media all and (min-width: 768px) and (max-width:992px)
+            {
+                width: 35%;
+
+                img
+               {
+                   max-width: 100%;
+               }
+               .description
+               {
+                   display: block;
+                   padding-bottom: 2.5em;
+               }
+               .date-time
+               {
+                   display: block;
+                   padding-top: 2.5em;
+               }
+            } 
+            img
+            {
+                display: none;
+                @media all and(min-width:768px) {
+                  display: block;
+                }
+            }
+        }
+        @media all and (min-width: 993px) 
+        {
+            .view-caja
+            {
+               width: 27%;
+               min-height: 330px;
+               margin-bottom: 1%;
+
+               img
+               {
+                   max-width: 100%;
+               }
+               .description
+               {
+                   display: block;
+                   padding-bottom: 2.5em;
+               }
+               .date-time
+               {
+                   display: block;
+                   padding-top: 2.5em;
+               }
+            }
+        }
+
+        #seccion-3-hijo
+        {
+          width: 80% !important;
+          margin:0px auto;
+
+          @media all and(min-width:993px) {
+              width:100%;
+          }
+        }
+    }
+  
+}
+&-five
+{
+    width:80%;
+    margin:0px auto;
+    text-align: center; 
+    background: #fff; 
+    padding: 40px 0;
+}
+&-six{
+    background:#ddd url(img/banner-213.jpg);
+    background-size: cover;
+    color: #fff;
+    display: none;
+    height: 340px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+
+    @media  all and(min-width:700px) and (max-width:1024px) {
+      background-position-x: -155px;
+    }
+    @media all and(min-width:993px){
+        display:flex;
+    }
+ }
+
+}
+
+.section-news
+{ 
+  display:none;
+  @media all and(min-width:993px) {
+     display:block;
+  }
+}

@@ -1,0 +1,405 @@
+@import './css-style/generic-styles.css';
+@import './css-style/style-index.css';
+@import './sass-style/functions.scss';
+@import './sass-style/menu.scss';
+@import './sass-style/footer.scss';
+@import './sass-style/login.scss';
+@import './sass-style/home.scss';
+@import './sass-style/header.scss';
+@import './sass-style/registro.scss';
+
+
+@media all and(max-width:767px){
+#content2-visibility{
+    background: rgba(36, 49, 65, 0.5);
+    position: absolute !important;
+    top: -188px !important;
+    height: 188px;
+    padding-top: 29px !important;
+    box-sizing: border-box;
+
+    .flex
+    {
+        display:block;
+        &.checkboxes{
+          display:none;
+        }
+    }
+}
+}
+
+
+@media (max-width: 1024px){
+   
+    .jc-between {
+      flex-wrap: wrap
+    }
+ }
+
+@media (max-width: 1024px){
+ 
+/*Company */
+iframe {
+    height: 300px;
+}
+.width-30 {
+    width: 40%;
+}
+
+    
+/*Job Details */    
+
+.info-desc p {
+    font-size: 12px;
+}
+.flex.content {
+    width: 90%;
+}
+    
+}
+
+/*
+Secciones
+*/
+
+.section-news
+{ 
+  display:none;
+  @media all and(min-width:993px) {
+     display:block;
+  }
+}
+
+
+button#menu {
+	
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 20px
+}
+button#menu:focus + nav#superior {
+	
+    display: block;
+}
+nav#superior ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.info-desc p.mt-1
+{
+    display:none;
+    margin-top: 15px
+}
+.job-text
+{
+    width: 80%;
+    margin: 0 auto 50px
+    
+}
+.skills-ul
+{
+    color: #3a84e3    ;
+    list-style: square
+}
+.skills-ul p
+{
+    color: #000
+}
+.btn-apply
+{
+    padding: 15px 30px;
+    background: #3a84e3;
+    color: #fff;
+    border: none;
+}
+button.share
+{
+    padding: 10px 20px;
+    color: #fff;
+    border: none
+}
+.share-btns
+{
+    margin: 30px 0
+}
+.related-jobs
+{
+    margin-top: 7%;   
+}
+div.related-jobs
+{
+    width: 60%;
+    justify-content: space-around;
+    margin: 0
+}
+.flex.jc-between.items-center
+{
+    height: 150px;
+    font-size: 15px;
+    border-top: 1px solid #ddd
+}
+.related-jobs-empresa
+{
+    color: #3a84e3
+}
+.view-job
+{
+    padding: 15px 25px;
+    background: #fff;
+    border: 1px solid #e7e7e7
+}
+.contact-box
+{
+    border: 1px solid #ddd;
+    background: #fff
+}
+.contact-box input, .contact-box textarea
+{
+    width: -webkit-fill-available;
+    margin-bottom: 25px
+}
+     .strike {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap; 
+    }
+
+    .strike > span {
+        position: relative;
+        display: inline-block;
+        color: #999999;
+        margin: 20px 0;
+        font-weight: 600
+    }
+	
+    .strike > span:before,
+    .strike > span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 1px;
+        background: #e0e0e0;
+    }
+
+    .strike > span:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+
+    .strike > span:after {
+        left: 100%;
+        margin-left: 15px;
+    }
+
+.flex.jc-between ul
+{
+    list-style: none;
+    padding: 0
+}
+.flex.jc-between ul li
+{
+    padding-bottom: 5px;
+    color: #878787
+}
+.view-caja
+{
+    text-align: left;
+    border: 1px solid #ddd;
+    padding-bottom: 30px;
+  
+}
+
+.view-caja p, .view-caja span {
+    padding-left: 5%;
+}
+
+
+.last-section {
+    display: flex;
+    width: 47%;
+    align-items: center;
+    margin-bottom: 40px
+}
+.last-section-text
+{
+    margin-left: 30px
+}
+.last-section a
+{
+    color: #648eca;
+    text-decoration: none;
+    font-size: 12px
+}
+@media (max-width: 768px){
+
+.info-desc p {
+    font-size: 11px;
+}
+
+.flex.content {
+    width: 90%;
+}
+.width-40 {
+ width: 80%;
+}
+.footer-in {
+    width: 90%;
+}
+
+.last-section
+{
+    width: 100%;
+}
+
+.view-caja
+{
+    margin: auto;
+}
+.content-2
+{
+    padding: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    width: 100%;
+}
+.flex.content-2
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex.checkboxes{
+      display:flex;
+      flex-wrap: wrap;
+        
+}
+}
+
+
+@media (max-width: 700px){
+   
+    .flex.content {
+    width: 80%;
+}
+    .mr-1 {
+    margin-right: 0px;
+}
+    
+    .align-center {
+    display: block;
+    align-self: center;
+    text-align: center !important;
+}
+ .flex {
+    display: block;
+}   
+    .width-75 {
+    width: 100%;
+}
+    .width-25 {
+    width: 100%;
+}
+    .input-login {
+    width: 100%;
+}
+    .contact-box input, .contact-box textarea {
+    width: 100%;
+}
+    .flex.jc-between.items-center {
+    height: 230px;
+    margin-bottom: 10px;
+}
+    .width-40 {
+    width: 100%;
+}
+    div.related-jobs {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+    .view-job {
+    width: 50%;
+    text-align: center !important;
+    margin: auto !important;
+    margin-top: 10px !important;
+}
+    .footer-1 {
+    width: 100%;
+    margin-bottom: 20px;
+    }
+
+    .footer-in {
+    display: block;
+    margin: 0 auto;
+}
+    .footer-3 {
+    display: block;
+}
+    footer button {
+    padding: 10px 0px;
+    padding-left: 0px;
+    width: 30%;
+    display: ruby-text;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+   .flex {
+    display: ruby;
+    width: 90% !important;
+} 
+button.share {
+    padding: 10px 10px;
+}
+.flex {
+    display: block;
+    width: 100% !important;
+}
+.inline {
+    
+    display: inline-flex;
+    justify-content: flex-end;
+    margin: auto;
+}
+.a-registro {
+    margin-bottom: 10px;
+}
+    
+}
+
+@media all and (max-width: 992px) {
+	
+    button#menu {
+        display: block;
+    }
+	nav#superior {
+        display: none;
+        width: 100%
+    }
+	nav#superior ul {
+        flex-direction: column;
+    }
+    .hide
+    {
+        display: block
+    }
+    .menu-2
+    {
+        display: none
+    }
+    .menu-top
+    {
+        flex-wrap: wrap
+    }
+    .menu-top ul
+    {
+        align-items: flex-start;
+    }
+}
+
