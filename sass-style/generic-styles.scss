@@ -113,10 +113,20 @@ Clases para los botones
         padding: 15px 40px; 
         margin-left:  5px; 
     }
+    &-apply{
+        
+       background: #3a84e3;
+       border: none;
+       color: #fff;
+       padding: 15px 30px;
+    }
 }
 
 //Button
 
+button#menu:focus + nav#superior {
+   display: block;
+}
 button{
     &#menu
     {
@@ -131,6 +141,29 @@ button{
     }
 }
 
+.contact-box
+{
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.contact-box input, .contact-box textarea
+{
+    width: -webkit-fill-available;
+    margin-bottom: 25px;
+}
+.flex.jc-between{
+    ul
+    {
+        list-style: none;
+        padding: 0;
+    }
+    li
+    {
+        padding-bottom: 5px;
+        color: #878787;
+
+    }
+}
 /*
 Botones sociales
 */
@@ -229,6 +262,10 @@ Botones sociales
 {
     display: none;
 }
+.job-text{
+    width: 80%;
+    margin: 0 auto 50px;
+}
 .job-time
 {
     border: 1px solid #fff;
@@ -250,6 +287,11 @@ Botones sociales
 .jc-around
 {
     justify-content: space-around
+}
+.info-desc p.mt-1
+{
+    display:none;
+    margin-top: 15px;
 }
 .icon-job-desc
 {
@@ -276,6 +318,11 @@ Botones sociales
 
     @media (max-width: 700px){
         height: 330px;
+    }
+    @media (max-width: $screen-medium-f){
+        p{
+            font-size: 11px;
+        }
     }
     @media all and(max-width:993px){
         background: #fff;
@@ -333,6 +380,19 @@ Botones sociales
     }
 }
 
+.last-section-text
+{
+    & .date
+    {
+        color: #7d7d7d;
+        font-size: 10px; 
+    }
+    & .content{
+        color:#7d7d7d;
+        font-size: 14px;
+    }
+}  
+
 .mr-1
 {
     margin-right: 15px
@@ -361,11 +421,38 @@ Botones sociales
 {
     padding-right: 40px
 }
+.related-jobs{
+    margin-top: 7%; 
+}
+.related-jobs-empresa{
+    color: #3a84e3;
+}
+.skills-ul{
+    color: #3a84e3    ;
+    list-style: square;
 
+    p{
+        color: #000;
+    }
+}
 
 .borde-completo
 {
     border: 1px solid #ddd;
+}
+.view-job{
+    padding: 15px 25px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+}
+.view-caja{
+    text-align: left;
+    border: 1px solid #ddd;
+    padding-bottom: 30px;
+
+    span,p{
+        padding-left: 5%;
+    }
 }
 .width-10
 {

@@ -1,3 +1,6 @@
+@import './generic-styles.scss';
+@import './functions.scss';
+
 /*Footer*/
 $background:#202020;
 $color:#fff;
@@ -31,11 +34,8 @@ $color-bottom:#7a7a7a;
         }
     }
     &-in{
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-        justify-content: space-between;
-        margin: 0 auto;
+
+        @include createBlock(block,80%,$max-width,auto,"true",flex-start,space-between);
     }
     &-1{
         width: 30%;

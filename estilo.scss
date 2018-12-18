@@ -1,5 +1,4 @@
 @import './css-style/generic-styles.css';
-@import './css-style/style-index.css';
 @import './sass-style/functions.scss';
 @import './sass-style/menu.scss';
 @import './sass-style/footer.scss';
@@ -46,9 +45,6 @@ iframe {
     width: 40%;
 }
 
-    
-/*Job Details */    
-
 .info-desc p {
     font-size: 12px;
 }
@@ -58,30 +54,6 @@ iframe {
     
 }
 
-/*
-Secciones
-*/
-
-.section-news
-{ 
-  display:none;
-  @media all and(min-width:993px) {
-     display:block;
-  }
-}
-
-
-button#menu {
-	
-    display: none;
-    background: transparent;
-    border: none;
-    font-size: 20px
-}
-button#menu:focus + nav#superior {
-	
-    display: block;
-}
 nav#superior ul {
     display: flex;
     list-style: none;
@@ -89,138 +61,28 @@ nav#superior ul {
     padding: 0;
 }
 
-
-.info-desc p.mt-1
-{
-    display:none;
-    margin-top: 15px
-}
-.job-text
-{
-    width: 80%;
-    margin: 0 auto 50px
-    
-}
-.skills-ul
-{
-    color: #3a84e3    ;
-    list-style: square
-}
-.skills-ul p
-{
-    color: #000
-}
-.btn-apply
-{
-    padding: 15px 30px;
-    background: #3a84e3;
-    color: #fff;
-    border: none;
-}
 button.share
 {
     padding: 10px 20px;
     color: #fff;
-    border: none
+    border: none;
 }
 .share-btns
 {
-    margin: 30px 0
-}
-.related-jobs
-{
-    margin-top: 7%;   
+    margin: 30px 0;
 }
 div.related-jobs
 {
     width: 60%;
     justify-content: space-around;
-    margin: 0
+    margin: 0;
 }
 .flex.jc-between.items-center
 {
     height: 150px;
     font-size: 15px;
-    border-top: 1px solid #ddd
+    border-top: 1px solid #ddd;
 }
-.related-jobs-empresa
-{
-    color: #3a84e3
-}
-.view-job
-{
-    padding: 15px 25px;
-    background: #fff;
-    border: 1px solid #e7e7e7
-}
-.contact-box
-{
-    border: 1px solid #ddd;
-    background: #fff
-}
-.contact-box input, .contact-box textarea
-{
-    width: -webkit-fill-available;
-    margin-bottom: 25px
-}
-     .strike {
-        display: block;
-        text-align: center;
-        overflow: hidden;
-        white-space: nowrap; 
-    }
-
-    .strike > span {
-        position: relative;
-        display: inline-block;
-        color: #999999;
-        margin: 20px 0;
-        font-weight: 600
-    }
-	
-    .strike > span:before,
-    .strike > span:after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        width: 9999px;
-        height: 1px;
-        background: #e0e0e0;
-    }
-
-    .strike > span:before {
-        right: 100%;
-        margin-right: 15px;
-    }
-
-    .strike > span:after {
-        left: 100%;
-        margin-left: 15px;
-    }
-
-.flex.jc-between ul
-{
-    list-style: none;
-    padding: 0
-}
-.flex.jc-between ul li
-{
-    padding-bottom: 5px;
-    color: #878787
-}
-.view-caja
-{
-    text-align: left;
-    border: 1px solid #ddd;
-    padding-bottom: 30px;
-  
-}
-
-.view-caja p, .view-caja span {
-    padding-left: 5%;
-}
-
-
 .last-section {
     display: flex;
     width: 47%;
@@ -238,10 +100,6 @@ div.related-jobs
     font-size: 12px
 }
 @media (max-width: 768px){
-
-.info-desc p {
-    font-size: 11px;
-}
 
 .flex.content {
     width: 90%;
@@ -374,10 +232,7 @@ button.share {
 }
 
 @media all and (max-width: 992px) {
-	
-    button#menu {
-        display: block;
-    }
+
 	nav#superior {
         display: none;
         width: 100%

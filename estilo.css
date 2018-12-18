@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(./css-style/generic-styles.css);
-@import url(./css-style/style-index.css);
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 nav#superior ul {
   display: -webkit-box;
@@ -85,6 +85,438 @@ Se agrega Cabeceras
   max-width: 1500px;
   margin: 0px auto; }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto; }
+
+div.keyword {
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 15px; }
+  @media all and (min-width: 993px) {
+    div.keyword {
+      width: 50%; } }
+  div.keyword input {
+    width: 100%;
+    height: 47px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px; }
+
+div.location {
+  display: none;
+  width: 30%; }
+  @media all and (min-width: 993px) {
+    div.location {
+      display: block; } }
+  div.location input {
+    height: 47px;
+    width: 100%;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px; }
+
+div.category {
+  display: none; }
+
+div.searchNowContent {
+  width: 70%;
+  margin: 0px auto; }
+  @media all and (min-width: 993px) {
+    div.searchNowContent {
+      width: 15%; } }
+
+/*
+Clases para los botones
+*/
+.btn-more {
+  background: transparent;
+  border: 1px solid #a2bae6;
+  margin-top: 50px;
+  padding: 10px 30px; }
+
+.btn-search {
+  background: #3a84e3;
+  border: none;
+  color: #fff;
+  padding: 15px; }
+
+.btn-hireUs {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 13px 40px; }
+
+.btn-hire {
+  background: #fff;
+  border: 1px solid #9ebfe8;
+  padding: 15px 20px;
+  margin-right: 5px; }
+
+.btn-searchNow {
+  background: #3a84e3;
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  height: 47px;
+  width: 100%; }
+
+.btn-findJob {
+  background: #3a84e3;
+  border: none;
+  color: #fff;
+  padding: 15px 40px;
+  margin-left: 5px; }
+
+.btn-apply {
+  background: #3a84e3;
+  border: none;
+  color: #fff;
+  padding: 15px 30px; }
+
+button#menu:focus + nav#superior {
+  display: block; }
+
+button#menu {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 20px; }
+  @media all and (max-width: 993px) {
+    button#menu {
+      display: block; } }
+
+.contact-box {
+  border: 1px solid #ddd;
+  background: #fff; }
+
+.contact-box input, .contact-box textarea {
+  width: -webkit-fill-available;
+  margin-bottom: 25px; }
+
+.flex.jc-between ul {
+  list-style: none;
+  padding: 0; }
+
+.flex.jc-between li {
+  padding-bottom: 5px;
+  color: #878787; }
+
+/*
+Botones sociales
+*/
+.fb-button {
+  background: #2b4a8b; }
+
+.tw-button {
+  background: #1f94d9; }
+
+.g-button {
+  background: #d83936; }
+
+.plan-premium {
+  background: #3a84e3;
+  color: #fff;
+  font-size: 15; }
+
+/* Clases Genericas*/
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.align-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.columna {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.flex p, .flex h5 {
+  margin: 0; }
+
+.flex.content {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.content-2 {
+  margin: 0 auto;
+  background: #243141;
+  padding: 20px 0px; }
+
+.flex.content-2 {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.checkboxes {
+  color: #fff;
+  width: 40%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    .checkboxes {
+      width: 100%; } }
+  @media (max-width: 1024px) {
+    .checkboxes {
+      width: 60%; } }
+
+.flex.content-2 input {
+  padding: 10px; }
+
+.flex.content-2 button {
+  padding: 10px 25px;
+  background: #3a84e3;
+  border: none;
+  color: #fff; }
+
+.hide {
+  display: none; }
+
+.job-text {
+  width: 80%;
+  margin: 0 auto 50px; }
+
+.job-time {
+  border: 1px solid #fff;
+  width: auto;
+  padding: 5px 20px;
+  margin: 30px auto;
+  -ms-flex-item-align: center;
+  align-self: center;
+  color: #fff;
+  border-radius: 5px; }
+
+.jc-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.jc-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.jc-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.info-desc p.mt-1 {
+  display: none;
+  margin-top: 15px; }
+
+.icon-job-desc {
+  font-size: 15px;
+  background: #3a84e3;
+  padding: 15px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  margin-right: 10px; }
+  @media (max-width: 700px) {
+    .icon-job-desc {
+      display: initial;
+      margin-right: 10px; } }
+
+.info-desc {
+  min-height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+  @media (max-width: 700px) {
+    .info-desc {
+      height: 330px; } }
+  @media (max-width: 993px) {
+    .info-desc p {
+      font-size: 11px; } }
+  @media all and (max-width: 993px) {
+    .info-desc {
+      background: #fff; } }
+  .info-desc .border-left {
+    border-left: 1px solid #ddd;
+    padding: 30px 0 30px 20px; }
+    @media (max-width: 700px) {
+      .info-desc .border-left {
+        padding: 30px 0 30px 0px; } }
+  .info-desc p {
+    font-size: 10px; }
+  .info-desc span {
+    border: 1px solid #ddd;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-right: 10px; }
+    @media (max-width: 768px) {
+      .info-desc span {
+        display: -moz-box;
+        margin-bottom: 5px; } }
+  .info-desc p {
+    font-size: 10px; }
+
+.job-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600; }
+  @media (max-width: 700px) {
+    .job-desc {
+      width: 100%;
+      display: none;
+      font-size: 8px; } }
+  @media (max-width: 768px) {
+    .job-desc {
+      width: 80%; } }
+
+.last-section-text .date {
+  color: #7d7d7d;
+  font-size: 10px; }
+
+.last-section-text .content {
+  color: #7d7d7d;
+  font-size: 14px; }
+
+.mr-1 {
+  margin-right: 15px; }
+
+.mt-1 {
+  margin-top: 15px !important; }
+
+.mt-5 {
+  margin-top: 50px !important; }
+
+.mb-1 {
+  margin-bottom: 15px; }
+
+.m-auto {
+  margin: 0 auto; }
+
+.pb-1 {
+  padding-bottom: 15px; }
+
+.pr-4 {
+  padding-right: 40px; }
+
+.related-jobs {
+  margin-top: 7%; }
+
+.related-jobs-empresa {
+  color: #3a84e3; }
+
+.skills-ul {
+  color: #3a84e3;
+  list-style: square; }
+  .skills-ul p {
+    color: #000; }
+
+.borde-completo {
+  border: 1px solid #ddd; }
+
+.view-job {
+  padding: 15px 25px;
+  background: #fff;
+  border: 1px solid #e7e7e7; }
+
+.view-caja {
+  text-align: left;
+  border: 1px solid #ddd;
+  padding-bottom: 30px; }
+  .view-caja span, .view-caja p {
+    padding-left: 5%; }
+
+.width-10 {
+  width: 10%; }
+
+.width-20 {
+  width: 20%; }
+
+.width-25 {
+  width: 25%; }
+
+.width-30 {
+  width: 30%; }
+  @media (max-width: 700px) {
+    .width-30 {
+      width: 100%;
+      text-align: center !important;
+      font-size: 12px;
+      margin-top: 10px !important; } }
+
+.width-40 {
+  width: 40%; }
+
+.width-50 {
+  width: 50%; }
+
+.width-60 {
+  width: 60%; }
+
+.width-70 {
+  width: 70%; }
+
+.width-75 {
+  width: 75%; }
+
+.width-80 {
+  width: 80%; }
+
+.width-90 {
+  width: 90%; }
+
+.items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.t-center {
+  text-align: center; }
+
 /*Footer*/
 .footer {
   background: #202020;
@@ -107,18 +539,23 @@ Se agrega Cabeceras
       .footer .footer-title-ul {
         font-size: 15px; } }
   .footer-in {
+    display: block;
+    width: 80%;
+    max-width: 1500px;
+    height: auto;
+    position: relative;
+    margin: 0px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    width: 80%;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 0 auto; }
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .footer-1 {
     width: 30%; }
     @media all and (max-width: 768px) {
@@ -301,6 +738,15 @@ Clases para los botones
   padding: 15px 40px;
   margin-left: 5px; }
 
+.btn-apply {
+  background: #3a84e3;
+  border: none;
+  color: #fff;
+  padding: 15px 30px; }
+
+button#menu:focus + nav#superior {
+  display: block; }
+
 button#menu {
   display: none;
   background: transparent;
@@ -309,6 +755,22 @@ button#menu {
   @media all and (max-width: 993px) {
     button#menu {
       display: block; } }
+
+.contact-box {
+  border: 1px solid #ddd;
+  background: #fff; }
+
+.contact-box input, .contact-box textarea {
+  width: -webkit-fill-available;
+  margin-bottom: 25px; }
+
+.flex.jc-between ul {
+  list-style: none;
+  padding: 0; }
+
+.flex.jc-between li {
+  padding-bottom: 5px;
+  color: #878787; }
 
 /*
 Botones sociales
@@ -401,6 +863,10 @@ Botones sociales
 .hide {
   display: none; }
 
+.job-text {
+  width: 80%;
+  margin: 0 auto 50px; }
+
 .job-time {
   border: 1px solid #fff;
   width: auto;
@@ -424,6 +890,10 @@ Botones sociales
 .jc-around {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
+
+.info-desc p.mt-1 {
+  display: none;
+  margin-top: 15px; }
 
 .icon-job-desc {
   font-size: 15px;
@@ -449,6 +919,9 @@ Botones sociales
   @media (max-width: 700px) {
     .info-desc {
       height: 330px; } }
+  @media (max-width: 993px) {
+    .info-desc p {
+      font-size: 11px; } }
   @media all and (max-width: 993px) {
     .info-desc {
       background: #fff; } }
@@ -493,6 +966,14 @@ Botones sociales
     .job-desc {
       width: 80%; } }
 
+.last-section-text .date {
+  color: #7d7d7d;
+  font-size: 10px; }
+
+.last-section-text .content {
+  color: #7d7d7d;
+  font-size: 14px; }
+
 .mr-1 {
   margin-right: 15px; }
 
@@ -514,8 +995,32 @@ Botones sociales
 .pr-4 {
   padding-right: 40px; }
 
+.related-jobs {
+  margin-top: 7%; }
+
+.related-jobs-empresa {
+  color: #3a84e3; }
+
+.skills-ul {
+  color: #3a84e3;
+  list-style: square; }
+  .skills-ul p {
+    color: #000; }
+
 .borde-completo {
   border: 1px solid #ddd; }
+
+.view-job {
+  padding: 15px 25px;
+  background: #fff;
+  border: 1px solid #e7e7e7; }
+
+.view-caja {
+  text-align: left;
+  border: 1px solid #ddd;
+  padding-bottom: 30px; }
+  .view-caja span, .view-caja p {
+    padding-left: 5%; }
 
 .width-10 {
   width: 10%; }
@@ -662,19 +1167,52 @@ Botones sociales
         #seccion-three .seccion-three-article #seccion-3-hijo {
           width: 100%; } }
 
+#seccion-four {
+  display: block;
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  position: relative;
+  margin: 0px auto; }
+
+#seccion-use {
+  display: block;
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  position: relative;
+  margin: 0px auto; }
+
 #seccion-five {
+  display: block;
   width: 80%;
+  max-width: 1500px;
+  height: auto;
+  position: relative;
+  margin: 0px auto;
   margin: 0px auto;
   text-align: center;
   background: #fff;
   padding: 40px 0; }
+
+#seccion-lastnews {
+  background: #243141;
+  width: 100%;
+  height: 350px; }
+  #seccion-lastnews-content {
+    display: block;
+    width: 80%;
+    max-width: 1500px;
+    height: auto;
+    position: relative;
+    margin: 0px auto; }
 
 #seccion-six {
   background: #ddd url(img/banner-213.jpg);
   background-size: cover;
   color: #fff;
   display: none;
-  height: 340px;
+  height: 360px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -683,7 +1221,15 @@ Botones sociales
   -ms-flex-pack: center;
   justify-content: center;
   text-align: left;
-  padding: 50px; }
+  padding: 50px;
+  overflow: hidden; }
+  #seccion-six-container {
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    position: relative;
+    margin: 0px auto; }
   @media all and (min-width: 700px) and (max-width: 1024px) {
     #seccion-six {
       background-position-x: -155px; } }
@@ -692,6 +1238,203 @@ Botones sociales
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
+
+#seccion-seven {
+  display: block;
+  width: 80%;
+  max-width: 1500px;
+  height: auto;
+  position: relative;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 100px 0; }
+
+.view-circle {
+  background: #3a84e3;
+  border-radius: 50px;
+  color: #fff;
+  padding: 26px 17px;
+  position: absolute;
+  text-decoration: none;
+  top: -40px;
+  margin-left: 70%; }
+
+#section-subscribe {
+  background: #f4f7fa;
+  width: 100%;
+  height: 400px; }
+  #section-subscribe .subscribe-kid {
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    position: relative;
+    margin: 0px auto;
+    background: url("img/subcribe.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    height: 100%; }
+    @media all and (max-width: 1024px) {
+      #section-subscribe .subscribe-kid {
+        background-position: -220px 0px; } }
+    #section-subscribe .subscribe-kid h2 {
+      position: absolute;
+      margin: 0px;
+      text-align: center;
+      line-height: 8px;
+      width: 100%;
+      top: 32px; }
+      #section-subscribe .subscribe-kid h2 .subtitle {
+        color: #a9aaab;
+        font-size: 14px; }
+  #section-subscribe .wayuse {
+    height: 200px;
+    width: 17%; }
+    #section-subscribe .wayuse:first-child {
+      top: 130px;
+      left: 257px; }
+    #section-subscribe .wayuse p {
+      line-height: 2px; }
+    #section-subscribe .wayuse-container {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0px auto;
+      height: 100%;
+      width: 100%; }
+    #section-subscribe .wayuse-img {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: #f4f7fa;
+      border: 1px solid #cad9e7;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 150px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      overflow: hidden;
+      margin: 0px auto;
+      width: 150px; }
+    #section-subscribe .wayuse-title {
+      font-weight: bold; }
+
+.candidatos-1 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%; }
+  @media all and (max-width: 768px) {
+    .candidatos-1 {
+      padding-left: 18%; } }
+  @media all and (min-width: 768px) {
+    .candidatos-1 {
+      width: 55%;
+      margin: 0px auto; } }
+
+.candidatos-2 {
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%; }
+  @media all and (min-width: 993px) {
+    .candidatos-2 {
+      width: 60%;
+      margin: 0px auto; } }
+  .candidatos-2 h2 {
+    text-align: center; }
+  .candidatos-2 .description {
+    display: none; }
+    @media all and (min-width: 993px) {
+      .candidatos-2 .description {
+        display: block;
+        padding-bottom: 10px; } }
+  .candidatos-2 .botones {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.candidatos {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  float: left;
+  background: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 26%;
+  min-height: auto;
+  margin-right: 1%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 5px;
+  margin-right: 1%;
+  overflow: hidden; }
+  @media screen and (min-width: 768px) {
+    .candidatos {
+      width: 32%; } }
+  .candidatos img {
+    position: relative;
+    width: 100%; }
+
+/*
+promociones
+*/
+.paquete-caja {
+  border: 1px solid #ddd;
+  padding: 10px 0 30px;
+  margin: 0 auto;
+  width: 60%; }
+  @media all and (min-width: 993px) {
+    .paquete-caja {
+      width: 27%; } }
+  .paquete-caja p {
+    padding: 10px; }
 
 .section-news {
   display: none; }
@@ -834,29 +1577,10 @@ Cabecera
     height: 300px; }
   .width-30 {
     width: 40%; }
-  /*Job Details */
   .info-desc p {
     font-size: 12px; }
   .flex.content {
     width: 90%; } }
-
-/*
-Secciones
-*/
-.section-news {
-  display: none; }
-  @media all and (min-width: 993px) {
-    .section-news {
-      display: block; } }
-
-button#menu {
-  display: none;
-  background: transparent;
-  border: none;
-  font-size: 20px; }
-
-button#menu:focus + nav#superior {
-  display: block; }
 
 nav#superior ul {
   display: -webkit-box;
@@ -866,27 +1590,6 @@ nav#superior ul {
   margin: 0;
   padding: 0; }
 
-.info-desc p.mt-1 {
-  display: none;
-  margin-top: 15px; }
-
-.job-text {
-  width: 80%;
-  margin: 0 auto 50px; }
-
-.skills-ul {
-  color: #3a84e3;
-  list-style: square; }
-
-.skills-ul p {
-  color: #000; }
-
-.btn-apply {
-  padding: 15px 30px;
-  background: #3a84e3;
-  color: #fff;
-  border: none; }
-
 button.share {
   padding: 10px 20px;
   color: #fff;
@@ -894,9 +1597,6 @@ button.share {
 
 .share-btns {
   margin: 30px 0; }
-
-.related-jobs {
-  margin-top: 7%; }
 
 div.related-jobs {
   width: 60%;
@@ -908,68 +1608,6 @@ div.related-jobs {
   height: 150px;
   font-size: 15px;
   border-top: 1px solid #ddd; }
-
-.related-jobs-empresa {
-  color: #3a84e3; }
-
-.view-job {
-  padding: 15px 25px;
-  background: #fff;
-  border: 1px solid #e7e7e7; }
-
-.contact-box {
-  border: 1px solid #ddd;
-  background: #fff; }
-
-.contact-box input, .contact-box textarea {
-  width: -webkit-fill-available;
-  margin-bottom: 25px; }
-
-.strike {
-  display: block;
-  text-align: center;
-  overflow: hidden;
-  white-space: nowrap; }
-
-.strike > span {
-  position: relative;
-  display: inline-block;
-  color: #999999;
-  margin: 20px 0;
-  font-weight: 600; }
-
-.strike > span:before,
-.strike > span:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 9999px;
-  height: 1px;
-  background: #e0e0e0; }
-
-.strike > span:before {
-  right: 100%;
-  margin-right: 15px; }
-
-.strike > span:after {
-  left: 100%;
-  margin-left: 15px; }
-
-.flex.jc-between ul {
-  list-style: none;
-  padding: 0; }
-
-.flex.jc-between ul li {
-  padding-bottom: 5px;
-  color: #878787; }
-
-.view-caja {
-  text-align: left;
-  border: 1px solid #ddd;
-  padding-bottom: 30px; }
-
-.view-caja p, .view-caja span {
-  padding-left: 5%; }
 
 .last-section {
   display: -webkit-box;
@@ -990,8 +1628,6 @@ div.related-jobs {
   font-size: 12px; }
 
 @media (max-width: 768px) {
-  .info-desc p {
-    font-size: 11px; }
   .flex.content {
     width: 90%; }
   .width-40 {
@@ -1089,8 +1725,6 @@ div.related-jobs {
     margin-bottom: 10px; } }
 
 @media all and (max-width: 992px) {
-  button#menu {
-    display: block; }
   nav#superior {
     display: none;
     width: 100%; }
