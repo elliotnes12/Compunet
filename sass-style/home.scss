@@ -12,11 +12,14 @@
     }
     &-two
    {
-       @include createBlock(none,100%,$max-width,auto);
+       @include createBlock(block,100%,$max-width,auto);
       
        @media all and(min-width:769px){
          display:block;
          padding-top: 55px;
+       }
+       @media all and(max-width:1024px){
+        @include createBlock(block,80%,$max-width,auto);
        }
    }
    &-three{
@@ -78,13 +81,14 @@
         {
             .view-caja
             {
-               width: 27%;
+               width: 32%;
                min-height: 330px;
-               margin-bottom: 1%;
+               margin-bottom: 2%;
+               max-width: 400px;
 
                img
                {
-                   max-width: 100%;
+                   width: 100%;
                }
                .description
                {
@@ -119,11 +123,13 @@
 }
 &-five
 {
+    clear: both;
     @include createBlock(block,80%,$max-width,auto);
     margin:0px auto;
     text-align: center; 
     background: #fff; 
     padding: 40px 0;
+    overflow: hidden;
 }
 &-lastnews{
     background:#243141;
@@ -272,9 +278,10 @@
        padding-left:18%;
     }
     @media all and(min-width:768px){
-        width:55%;
+        width:50%;
         margin:0px auto;
     }
+
 }
 .candidatos-2
 {
@@ -286,9 +293,9 @@
     justify-content: center;
     width: 100%;
 
-    @media all and(min-width:993px) 
+    @media all and(min-width:768px) 
     {
-        width:60%;
+        width:50%;
         margin:0px auto;
     }
     h2{
@@ -345,8 +352,9 @@ promociones
     border: 1px solid #ddd;
     padding: 10px 0 30px;
     margin: 0 auto;
-    width: 60%;
-
+    width: 31%;
+    float: left;
+    margin-left: 1%;
     @media all and(min-width:993px)
      {
         width:27%;

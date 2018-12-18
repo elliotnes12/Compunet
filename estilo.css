@@ -1087,7 +1087,7 @@ Botones sociales
       width: 80%; } }
 
 #seccion-two {
-  display: none;
+  display: block;
   width: 100%;
   max-width: 1500px;
   height: auto;
@@ -1097,6 +1097,14 @@ Botones sociales
     #seccion-two {
       display: block;
       padding-top: 55px; } }
+  @media all and (max-width: 1024px) {
+    #seccion-two {
+      display: block;
+      width: 80%;
+      max-width: 1500px;
+      height: auto;
+      position: relative;
+      margin: 0px auto; } }
 
 #seccion-three {
   text-align: center;
@@ -1149,11 +1157,12 @@ Botones sociales
             display: block; } }
     @media all and (min-width: 993px) {
       #seccion-three .seccion-three-article .view-caja {
-        width: 27%;
+        width: 32%;
         min-height: 330px;
-        margin-bottom: 1%; }
+        margin-bottom: 2%;
+        max-width: 400px; }
         #seccion-three .seccion-three-article .view-caja img {
-          max-width: 100%; }
+          width: 100%; }
         #seccion-three .seccion-three-article .view-caja .description {
           display: block;
           padding-bottom: 2.5em; }
@@ -1184,6 +1193,7 @@ Botones sociales
   margin: 0px auto; }
 
 #seccion-five {
+  clear: both;
   display: block;
   width: 80%;
   max-width: 1500px;
@@ -1193,7 +1203,8 @@ Botones sociales
   margin: 0px auto;
   text-align: center;
   background: #fff;
-  padding: 40px 0; }
+  padding: 40px 0;
+  overflow: hidden; }
 
 #seccion-lastnews {
   background: #243141;
@@ -1356,7 +1367,7 @@ Botones sociales
       padding-left: 18%; } }
   @media all and (min-width: 768px) {
     .candidatos-1 {
-      width: 55%;
+      width: 50%;
       margin: 0px auto; } }
 
 .candidatos-2 {
@@ -1373,9 +1384,9 @@ Botones sociales
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%; }
-  @media all and (min-width: 993px) {
+  @media all and (min-width: 768px) {
     .candidatos-2 {
-      width: 60%;
+      width: 50%;
       margin: 0px auto; } }
   .candidatos-2 h2 {
     text-align: center; }
@@ -1429,7 +1440,9 @@ promociones
   border: 1px solid #ddd;
   padding: 10px 0 30px;
   margin: 0 auto;
-  width: 60%; }
+  width: 31%;
+  float: left;
+  margin-left: 1%; }
   @media all and (min-width: 993px) {
     .paquete-caja {
       width: 27%; } }
